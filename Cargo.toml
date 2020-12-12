@@ -10,3 +10,13 @@ description = "A CLI for completing various adventures: rust-adventure, shell-ad
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serde = { version = "1.0.118", features = ["derive"] }
+clap = "3.0.0-beta.2"
+serde_yaml = "0.8.14"
+yaml-rust = "0.4.4"
+lazy_static = "1.4.0"
+directories = "3.0.1"
+
+[lib]
+name = "adventure_time"
+path = "src/lib.rs"

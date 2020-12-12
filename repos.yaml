@@ -1,0 +1,23 @@
+courses:
+  - id: jq
+     description: jq is a command line tool for manipulating JSON with a rich API.
+     repo: https://github.com/shell-adventure/jq-adventure
+     tags:
+       - shell
+  - id: awk
+    description: awky
+    repo: https://github.com/shell-adventure/jq-adventure
+    tags:
+      - shell
+  - id: rust
+    repo:
+    description: |
+      A language empowering everyone to build reliable and efficient software.
+    tags:
+      - rust
+  - id: serde
+    repo: https://github.com/rust-adventure/serde-adventure
+    description: |
+      Serde is a framework for serializing and deserializing Rust data structures efficiently and generically.
+    tags:
+      - rust
