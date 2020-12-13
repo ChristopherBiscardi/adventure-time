@@ -1,7 +1,9 @@
-use adventure_time::config::{get_config_dir, get_manifest};
+use adventure_time::{config::get_manifest, init};
 use clap::{crate_description, crate_version, App, AppSettings, Arg};
+use tokio::prelude::*;
 
-fn main() {
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let matches = App::new("Adventure Time")
         .version(crate_version!())
         .author("Chris Biscardi <chris@christopherbiscardi.com>")
@@ -36,10 +38,10 @@ fn main() {
         .get_matches();
 
     match matches.subcommand_name() {
-        Some("init") => init(subcommand_matches("init").unwrap()),
+        Some("init") => init(matches.subcommand_matches("init").unwrap()),
         Some("list") => {}
         Some("watch") => {}
         _ => {}
     };
-    // Same as above examples...
+    Ok(())
 }

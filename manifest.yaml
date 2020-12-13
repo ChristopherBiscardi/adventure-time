@@ -1,16 +1,16 @@
 courses:
   - id: jq
-     description: jq is a command line tool for manipulating JSON with a rich API.
-     repo: https://github.com/shell-adventure/jq-adventure
-     tags:
-       - shell
+    description: jq is a command line tool for manipulating JSON with a rich API.
+    repo: https://github.com/shell-adventure/jq-adventure
+    tags:
+      - shell
   - id: awk
     description: awky
     repo: https://github.com/shell-adventure/jq-adventure
     tags:
       - shell
   - id: rust
-    repo:
+    repo: 
     description: |
       A language empowering everyone to build reliable and efficient software.
     tags:
