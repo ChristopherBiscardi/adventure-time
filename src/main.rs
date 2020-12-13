@@ -35,9 +35,8 @@ fn main() {
         )
         .get_matches();
 
-    get_config_dir();
     match matches.subcommand_name() {
-        Some("init") => {}
+        Some("init") => init(subcommand_matches("init").unwrap()),
         Some("list") => {}
         Some("watch") => {}
         _ => {}
